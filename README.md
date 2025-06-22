@@ -4,7 +4,7 @@
 ## 🛡️ Incident Report: PwnCrypt Ransomware Detection and Containment
 
 # Objective:
-To investigate abnormal traffic patterns originating from within the network, identify any signs of lateral movement or misuse of built-in tools (e.g., PowerShell), and validate whether an internal host is responsible for the performance degradation.
+Successfully detected and contained a zero-day PwnCrypt ransomware infection on endpoint fe-vmlab by immediately isolating the affected system, thereby preventing further file encryption and lateral movement within the corporate network.
 
 ---
 # Tools & Technology:
@@ -30,13 +30,13 @@ To investigate abnormal traffic patterns originating from within the network, id
 
 
 ## 1. Summary
-Incident Title: Unauthorized Internal Port Scanning via PowerShell <br />
-Date of Discovery: June 10, 2025 <br />
-Reporting Team: Security Operations / Threat Hunting <br />
-Impacted Network Segment: 10.0.0.0/16 <br />
-Affected Host: windows-target-1 (10.0.0.5) <br />
-TTPs Observed: T1046, T1059.001, T1078, T1105, T1204.002 <br />
-Incident Status: Contained; Rebuilt/ Re-imaging  <br />
+Incident Title: PwnCrypt Ransomware Detection and Containment <br />
+Date Identified: June 21, 2025 <br />
+Reported By: Security Operations Team <br />
+Affected Asset: fe-vmlab (Windows Endpoint) <br />
+Investigator: Fe Esguerra <br />
+Severity: High <br />
+
 
 ## 2. Preparation
 ### Observation:
