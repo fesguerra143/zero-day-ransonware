@@ -4,7 +4,7 @@
 ## 🛡️ Incident Report: PwnCrypt Ransomware Detection and Containment
 
 # Objective:
-Successfully detected and contained a zero-day PwnCrypt ransomware infection on endpoint fe-vmlab by immediately isolating the affected system, thereby preventing further file encryption and lateral movement within the corporate network.
+Identify any suspicious zero-day PwnCrypt ransomware infection, isolate the affected system, and prevent lateral movement within the corporate network.
 
 ---
 # Tools & Technology:
