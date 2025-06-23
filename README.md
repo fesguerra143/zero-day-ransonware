@@ -76,7 +76,8 @@ DeviceFileEvents
 | where FileName contains "_pwncrypt"
 | order by Timestamp desc
 ```
-![zero3](https://github.com/user-attachments/assets/2e9ec255-02cb-494c-b0e4-96ceb414648f)
+
+![zero-day](https://github.com/user-attachments/assets/c91508e3-0f13-4170-a35e-53276ee4b864)
 
 #### DeviceProcessEvents
 ```kql
