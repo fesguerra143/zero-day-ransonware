@@ -25,6 +25,7 @@ Identify any suspicious zero-day PwnCrypt ransomware infection, isolate the affe
 - [7. MITRE ATT&CK Mapping](#7-mitre-attck-mapping)
 - [8. Lessons Learned / Improvement:](#8-lessons-learned--improvement)
 - [9. Final Status](#9-final-status)
+  
 ---
 
 
